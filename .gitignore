@@ -1,0 +1,63 @@
+# Build output directories
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Visual Studio cache/database files
+.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet restore
+*.lock.json
+project.lock.json
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test Results
+TestResults/
+*.trx
+*.coveragexml
+coverage.json
+*.coverage
+*.coveragesettings
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific settings
+*.userosscache
+*.sln.ide
