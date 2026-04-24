@@ -1,0 +1,4 @@
+/home/runner/work/SalesforceToolbox/SalesforceToolbox/src/SalesforceToolbox.Core/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttribute.cs
+/home/runner/work/SalesforceToolbox/SalesforceToolbox/src/SalesforceToolbox.Core/bin/Debug/Newtonsoft.Json.dll
+/home/runner/work/SalesforceToolbox/SalesforceToolbox/src/SalesforceToolbox.Core/bin/Debug/Salesforce.Common.dll
+/home/runner/work/SalesforceToolbox/SalesforceToolbox/src/SalesforceToolbox.Core/bin/Debug/Salesforce.Force.dll

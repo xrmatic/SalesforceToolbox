@@ -1,0 +1,72 @@
+<mah:MetroWindow x:Class="SalesforceToolbox.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:viewModels="clr-namespace:SalesforceToolbox.App.ViewModels"
+        Title="Salesforce Toolbox" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        GlowBrush="{DynamicResource MahApps.Brushes.Accent}">
+
+    <mah:MetroWindow.Resources>
+        <BitmapImage x:Key="AppIcon" UriSource="pack://application:,,,/SalesforceToolbox.App;component/Resources/appicon.png" />
+    </mah:MetroWindow.Resources>
+
+    <Grid>
+        <mah:HamburgerMenu x:Name="HamburgerMenuControl"
+                           IsPaneOpen="False"
+                           DisplayMode="CompactOverlay"
+                           OpenPaneLength="200"
+                           CompactPaneLength="48"
+                           ItemsSource="{Binding MenuItems}"
+                           OptionsItemsSource="{Binding OptionsMenuItems}"
+                           SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}"
+                           ItemCommand="{Binding NavigateCommand}"
+                           VerticalScrollBarOnLeftSide="False">
+            <mah:HamburgerMenu.ItemTemplate>
+                <DataTemplate>
+                    <mah:HamburgerMenuIconItem Icon="{Binding Icon}"
+                                              Label="{Binding Label}" />
+                </DataTemplate>
+            </mah:HamburgerMenu.ItemTemplate>
+            <mah:HamburgerMenu.OptionsItemTemplate>
+                <DataTemplate>
+                    <mah:HamburgerMenuIconItem Icon="{Binding Icon}"
+                                              Label="{Binding Label}" />
+                </DataTemplate>
+            </mah:HamburgerMenu.OptionsItemTemplate>
+            <mah:HamburgerMenu.Content>
+                <Grid>
+                    <!-- Connection status bar -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Background="{DynamicResource MahApps.Brushes.Accent}" Padding="8,4">
+                        <DockPanel>
+                            <iconPacks:PackIconMaterial Kind="Cloud" Foreground="White"
+                                                        VerticalAlignment="Center" Margin="0,0,6,0" />
+                            <TextBlock Foreground="White" VerticalAlignment="Center"
+                                       Text="{Binding ConnectionStatusText}" />
+                            <Button DockPanel.Dock="Right" Content="Connect"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource MahApps.Styles.Button.Flat}"
+                                    Foreground="White"
+                                    Command="{Binding ConnectCommand}"
+                                    Visibility="{Binding ConnectButtonVisibility}" />
+                            <Button DockPanel.Dock="Right" Content="Disconnect"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource MahApps.Styles.Button.Flat}"
+                                    Foreground="White"
+                                    Command="{Binding DisconnectCommand}"
+                                    Visibility="{Binding DisconnectButtonVisibility}" />
+                        </DockPanel>
+                    </Border>
+                    <!-- Content area -->
+                    <ContentControl Grid.Row="1"
+                                    Content="{Binding CurrentView}" />
+                </Grid>
+            </mah:HamburgerMenu.Content>
+        </mah:HamburgerMenu>
+    </Grid>
+</mah:MetroWindow>

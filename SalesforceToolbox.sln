@@ -1,0 +1,52 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.App", "src\SalesforceToolbox.App\SalesforceToolbox.App.csproj", "{6CF63887-7F83-4859-8FF4-7F81C1DD9C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.Core", "src\SalesforceToolbox.Core\SalesforceToolbox.Core.csproj", "{7B923328-BBCF-4E54-96BB-31B856BDF8AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.Plugins.SDK", "src\SalesforceToolbox.Plugins.SDK\SalesforceToolbox.Plugins.SDK.csproj", "{B37A9FC4-CBC4-4F05-B3C5-536EED43B10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.Plugin.UserManagement", "Plugins\UserManagement\SalesforceToolbox.Plugin.UserManagement.csproj", "{D1AA5155-DD4D-4593-B1A9-BADAD14931D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.Plugin.ObjectExplorer", "Plugins\ObjectExplorer\SalesforceToolbox.Plugin.ObjectExplorer.csproj", "{1A6A82D7-F1D5-422A-BFCD-AA2E1226BE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceToolbox.Plugin.LogViewer", "Plugins\LogViewer\SalesforceToolbox.Plugin.LogViewer.csproj", "{43611474-4681-4FA5-AE2C-C032D1080084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CF63887-7F83-4859-8FF4-7F81C1DD9C37}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{6CF63887-7F83-4859-8FF4-7F81C1DD9C37}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{6CF63887-7F83-4859-8FF4-7F81C1DD9C37}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{6CF63887-7F83-4859-8FF4-7F81C1DD9C37}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{7B923328-BBCF-4E54-96BB-31B856BDF8AC}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{7B923328-BBCF-4E54-96BB-31B856BDF8AC}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{7B923328-BBCF-4E54-96BB-31B856BDF8AC}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{7B923328-BBCF-4E54-96BB-31B856BDF8AC}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{B37A9FC4-CBC4-4F05-B3C5-536EED43B10E}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{B37A9FC4-CBC4-4F05-B3C5-536EED43B10E}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{B37A9FC4-CBC4-4F05-B3C5-536EED43B10E}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{B37A9FC4-CBC4-4F05-B3C5-536EED43B10E}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{D1AA5155-DD4D-4593-B1A9-BADAD14931D4}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{D1AA5155-DD4D-4593-B1A9-BADAD14931D4}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{D1AA5155-DD4D-4593-B1A9-BADAD14931D4}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{D1AA5155-DD4D-4593-B1A9-BADAD14931D4}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{1A6A82D7-F1D5-422A-BFCD-AA2E1226BE18}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{1A6A82D7-F1D5-422A-BFCD-AA2E1226BE18}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{1A6A82D7-F1D5-422A-BFCD-AA2E1226BE18}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{1A6A82D7-F1D5-422A-BFCD-AA2E1226BE18}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{43611474-4681-4FA5-AE2C-C032D1080084}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{43611474-4681-4FA5-AE2C-C032D1080084}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{43611474-4681-4FA5-AE2C-C032D1080084}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{43611474-4681-4FA5-AE2C-C032D1080084}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
